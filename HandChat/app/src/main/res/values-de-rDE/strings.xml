@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HandChat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">die Einstellungen</string>
+
+    <string name="story">Es war einmal ein sehr reicher und neugieriger König. Dieser König hatte einen riesigen Felsbrocken mitten auf einer Straße platziert. Dann versteckte er sich in der Nähe, um zu sehen, ob jemand versuchen würde, den riesigen Stein von der Straße zu entfernen.
+
+Die ersten Passanten waren einige der reichsten Kaufleute und Höflinge des Königs. Anstatt es zu bewegen, gingen sie einfach darum herum.
+
+Einige beschuldigten den König lautstark, die Straßen nicht instand gehalten zu haben. Keiner von ihnen versuchte den Felsbrocken zu bewegen.
+
+Schließlich kam ein Bauer vorbei. Seine Arme waren voller Gemüse. Als er sich dem Felsbrocken näherte, stellte der Bauer seine Ladung ab und versuchte, den Stein an den Straßenrand zu schieben, anstatt einfach wie die anderen herumzulaufen. Es war sehr anstrengend, aber es gelang ihm schließlich.
+
+Der Bauer sammelte seine Ladung ein und war bereit, sich auf den Weg zu machen, als er eine Geldbörse sagte, die auf der Straße lag, auf der der Felsbrocken gewesen war. Der Bauer öffnete die Handtasche.
+
+Die Geldbörse war voller Goldmünzen und einer Notiz des Königs. In der Notiz des Königs stand, dass das Gold der Geldbörse eine Belohnung dafür war, dass der Felsbrocken von der Straße entfernt wurde.
+
+Der König zeigte dem Bauern, was viele von uns nie verstehen: Jedes Hindernis bietet die Möglichkeit, unseren Zustand zu verbessern.</string>
+    <string name="menu_home">Zuhause</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="settings">die Einstellungen</string>
+    <string name="informations">Informationen</string>
+    <string name="hello">Hallo..</string>
+    <string name="lets_talk">Lass uns reden</string>
+    <string name="sign">Schild</string>
+    <string name="text">Text</string>
+    <string name="dictionary">Wörterbuch</string>
+    <string name="learn">Learn</string>
+    <string name="language">Lernen</string>
+    <string name="information">Information</string>
+    <string name="notification">Benachrichtigung</string>
+    <string name="reset">Reset</string>
+    <string name="translate">Translate</string>
+    <string name="feature_under_development">Feature in Entwicklung</string>
+    <string name="folder">Mappe</string>
+    <string name="photo">Foto</string>
+    <string name="notifyOn">Benachrichtigung aktiviert</string>
+    <string name="notifyOff">Benachrichtigung deaktiviert</string>
+    <string name="dailyNotify">Comeback</string>
+</resources>

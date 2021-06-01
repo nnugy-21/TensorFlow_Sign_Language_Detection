@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark"
+    android:orientation="vertical"
+    tools:context=".ui.sign.SignTranslatorActivity">
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/ic_baseline_image_24"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_menu_background">
+
+        <ImageButton
+            android:id="@+id/text_history"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            android:src="@drawable/ic_history"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/place_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_history"
+            app:layout_constraintVertical_bias="0.592">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/blue_darker"
+                android:lineSpacingExtra="8dp"
+                android:justificationMode="inter_word"
+                android:text="@string/story" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/place_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" >
+            <Button
+                android:id="@+id/reset_btn"
+                android:layout_width="205dp"
+                android:text="@string/folder"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/translate_btn"
+                android:layout_width="205dp"
+                android:text="@string/photo"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

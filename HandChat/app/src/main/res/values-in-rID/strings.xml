@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HandChat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Pengaturan</string>
+
+    <string name="story">Ada seorang raja yang sangat kaya dan ingin tahu. Raja ini menempatkan sebuah batu besar di tengah jalan. Kemudian dia bersembunyi di dekatnya untuk melihat apakah ada yang mencoba menyingkirkan batu raksasa dari jalan.
+
+Orang pertama yang lewat adalah beberapa pedagang dan bangsawan raja terkaya. Daripada menggerakkannya, mereka hanya berjalan mengelilinginya.
+
+Beberapa dengan keras menyalahkan Raja karena tidak memelihara jalan. Tak satu pun dari mereka mencoba memindahkan batu besar itu.
+
+Akhirnya, seorang petani datang. Lengannya penuh sayuran. Ketika dia sampai di dekat batu besar itu, daripada hanya berjalan mengelilinginya seperti yang dilakukan orang lain, petani itu meletakkan bebannya dan mencoba memindahkan batu itu ke sisi jalan. Butuh banyak usaha tapi akhirnya dia berhasil.
+
+Petani mengumpulkan bebannya dan siap untuk melanjutkan perjalanannya ketika dia mengatakan sebuah tas tergeletak di jalan tempat batu itu berada. Petani itu membuka dompetnya.
+
+Dompet itu penuh dengan koin emas dan catatan dari raja. Catatan raja mengatakan bahwa dompet emas itu adalah hadiah karena memindahkan batu besar dari jalan.
+
+Raja menunjukkan kepada petani apa yang banyak dari kita tidak pernah mengerti: setiap rintangan memberikan kesempatan untuk memperbaiki kondisi kita.</string>
+    <string name="menu_home">Rumah</string>
+    <string name="menu_gallery">Galeri</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="settings">Pengaturan</string>
+    <string name="informations">Informasi</string>
+    <string name="hello">Hallo..</string>
+    <string name="lets_talk">Ayo berbicara</string>
+    <string name="sign">Isyarat</string>
+    <string name="text">Teks</string>
+    <string name="dictionary">Kamus</string>
+    <string name="learn">Belajar</string>
+    <string name="language">Bahasa</string>
+    <string name="information">Informasi</string>
+    <string name="notification">Notifikasi</string>
+    <string name="reset">Reset</string>
+    <string name="translate">Translate</string>
+    <string name="feature_under_development">Fitur dalam Pengembangan</string>
+    <string name="folder">Folder</string>
+    <string name="photo">Foto</string>
+    <string name="notifyOn">Notifikasi Dinyalakan</string>
+    <string name="notifyOff">Notifikasi Dimatikan</string>
+    <string name="dailyNotify">Comeback</string>
+</resources>
