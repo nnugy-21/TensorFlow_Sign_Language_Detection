@@ -35,7 +35,7 @@ We collect images using our own android mobile devices, since we will use our mo
 
 ### Step 2. Labeling Images
 Since it is an object detection model, we need to create bounding boxes and label our image, which is a lot easier if you use Google Cloud Platform. Here you'll use the same dataset as the AutoML quickstart you can find more detail about how to prepare your dataset [here](https://cloud.google.com/vision/automl/object-detection/docs/edge-quickstart#preparing_a_dataset).<br>
-You will need to create bounding boxes around the object and place a label on top of it, like this image below
+You will need to create bounding boxes around the object and place a label on top of it, like this image below<br>
 <img src="https://storage.googleapis.com/sign_language_dataset2/Documentation/Doc3.png"><br>
 In our *Sign Language Dataset*, we have 2014 images with a lot of different angles and different background which are splitted into 24 classes.<br>
 You can find more detail about how to prepare a good dataset by simply following this tutorial [here](https://cloud.google.com/vision/automl/object-detection/docs/prepare).<br>
