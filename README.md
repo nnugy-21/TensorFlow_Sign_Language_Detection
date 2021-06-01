@@ -139,7 +139,7 @@ And here is the mAP (Mean Average Precision) on each characters:<br>
 ---
 
 ## Things to Improve
-As you can see in the mAP image, this model actually perform really bad on some characters especially **A**, **M**, **N**, **S**, and **T**, which have similar shape. For now we are couple things that we can try to improve our accuracy.
+As you can see in the mAP image, this model actually perform really bad on some characters especially **A**, **M**, **N**, **S**, and **T**, which have similar shape. For now there are couple things that we can try to improve our accuracy.
 * We can try to find more training dataset. If you look at our dataset, we have a lot of images with different background and angles, but for every angle we only have 3 of those images. So we can try to improve our accuracy by adding more of the similar angles images.
 * Since it is actually has very little classification loss on training, which is 0.3% loss. We can try to add more Validation set to reduce the variance.
 
