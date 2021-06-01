@@ -20,7 +20,7 @@ Each image in the dataset contains objects labeled as one of the following class
 * Alphabet from **[A - Y]** without **J** and **Z**, we exclude this two characters as it is required motion to perform.
 
 The dataset contains the bounding-boxes specifying where each object locates, together with the object's label.<br>
-Here is an example image from the dataset:
+Here is some example images from the dataset:
 
 <br/>
 
