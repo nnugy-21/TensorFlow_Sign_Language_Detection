@@ -31,7 +31,7 @@ Here is some example images from the dataset:
 ## Preparing Dataset
 
 ### Step 1. Collecting Images
-We collect images using our own android mobile devices, since we will use our model on android mobile device. You need to make sure that the dataset that you want to use, will similiar or represent the image where your model will be deployed.
+We collect images using our own android mobile devices, since we will use our model on android mobile device. You need to make sure that the dataset that you want to use will represent the image where your model will be deployed.
 
 ### Step 2. Labeling Images
 Since it is an object detection model, we need to create bounding boxes and label our image, which is a lot easier if you use Google Cloud Platform. Here you'll use the same dataset as the AutoML quickstart you can find more detail about how to prepare your dataset [here](https://cloud.google.com/vision/automl/object-detection/docs/edge-quickstart#preparing_a_dataset).<br>
