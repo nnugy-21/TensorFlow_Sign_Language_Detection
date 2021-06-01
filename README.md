@@ -133,7 +133,7 @@ You can use the **model.tflite** that you get from previous training and save it
 Here is the some images of how our application looks like.<br>
 <img src="https://storage.googleapis.com/sign_language_dataset2/Documentation/Doc5.png">
 
-And here is the mAP (Mean Average Precision) on each characters:
+And here is the mAP (Mean Average Precision) on each characters:<br>
 <img src="https://storage.googleapis.com/sign_language_dataset2/Documentation/Doc6.png">
 
 ---
