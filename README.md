@@ -3,7 +3,7 @@
 ---
 
 Author: (will be updated later)
-* Andan
+* Fathullah Auzan Setyo Laksono
 * Rizqu
 * Putri
 * Puti
@@ -130,6 +130,18 @@ Therefore you'll have to evaluate the exported TFLite model and compare its accu
 ## Android Deployment
 You can try to download the HandSign application which are provided in this collaboratory in android studio. We simply following [this tutorial](https://codelabs.developers.google.com/tflite-object-detection-android) for our android deployment.<br>
 You can use the **model.tflite** that you get from previous training and save it in the assets folder.<br>
+
+### Step 1. UI/UX
+First before making the application, we create flow, user experience and user interface for the app. We make it using Figma, because its free and provide colaboration feature, so the other members can edit and see the changes. Here is the link : https://www.figma.com/file/x8X7DC8O0qwDcdJQ5ht76w/Sign-Language-Translator?node-id=0%3A1
+
+### Step 2. Creating Layout
+The next is to implement our UI/UX to the real thing, by making the layout of the application in android studio. Because of the slide bar menu in our application, we use the slide bar menu activity template from android studio and modify it as we need. After finishing the three menu that consist of Home, Settings and Information, next is to make the activity for each feature. Since we only got 1 month to finish this project, we mainly focus on Sign language translator feature meanwhile the other feature is display as "Under Development" for future improvement. 
+
+### Step 3. Coding the App
+For this step before start to coding the sign language translator feature, we make sure the other feature works first, making Intent for every button and directing it to the correct activity or fragment. Then we start to coding sign language translator feature by preparing the input for the app. This app can take picture with the android camera or take it from the android galery folder. The choosen picture than displayed on the application screen so that can be analyzed by the model then outputing the result.
+
+Since we follow the tutorial from the official documentation, this object detection step mostly similar to that. We make a function to make the bounding box for showing the translator result and anothe function to return the image to be displayed in the application, then a function to call the tflite model with the input is Bitmap of the image that alread be converted before. 
+
 Here is the some images of how our application looks like.<br>
 <img src="https://storage.googleapis.com/sign_language_dataset2/Documentation/Doc5.png">
 
