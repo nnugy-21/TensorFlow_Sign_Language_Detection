@@ -3,12 +3,12 @@
 ---
 
 Author: (will be updated later)
-* Fathullah Auzan Setyo Laksono
-* Rizqu
-* Putri
-* Puti
-* Nugy
-* Farhan
+* Fathullah Auzan Setyo Laksono (A0040337)
+* Rizqullah Fadhil Rafi (A0040334)
+* Shabrina Zhafarina Putri (C0040335)
+* Puti Syifa Khairani (C0040343)
+* I Made Nugraha Pinton (M0040331)
+* Immanuel Farhan Sipahutar (M1141448)
 
 ---
 
