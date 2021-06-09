@@ -17,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HandChat">
-        <activity android:name=".ui.SplashActivity"
+        <activity android:name=".ui.dictionary.DataDictionary"></activity>
+        <activity
+            android:name=".ui.SplashActivity"
             android:theme="@style/Theme.HandChat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,8 +34,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.HandChat.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.HandChat.NoActionBar"></activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"

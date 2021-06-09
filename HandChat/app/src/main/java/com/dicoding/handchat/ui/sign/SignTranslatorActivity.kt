@@ -65,20 +65,14 @@ class SignTranslatorActivity : AppCompatActivity() {
     }
 
     private fun setViewAndDetect(bitmap: Bitmap) {
-        // Display capture image
         activitySignTranslatorBinding.camera.setImageBitmap(bitmap)
 
-        // Run ODT and display result
-        // Note that we run this in the background thread to avoid blocking the app UI because
-        // TFLite object detection is a synchronised process.
         lifecycleScope.launch(Dispatchers.Default) { runObjectDetection(bitmap) }
     }
 
     private fun runObjectDetection(bitmap: Bitmap) {
-        // Step 1: Create TFLite's TensorImage object
         val image = TensorImage.fromBitmap(bitmap)
 
-        // Step 2: Initialize the detector object
         val options = ObjectDetector.ObjectDetectorOptions.builder()
             .setMaxResults(5)
             .setScoreThreshold(0.3f)
@@ -90,15 +84,11 @@ class SignTranslatorActivity : AppCompatActivity() {
         )
         val results = detector.detect(image)
 
-        // Step 4: Parse the detection result and show it
         val resultToDisplay = results.map {
-            // Get the top-1 category and craft the display text
             val category = it.categories.first()
             val text = "${category.label}, ${category.score.times(100).toInt()}%"
-            // Create a data object to display the detection result
             DetectionResult(it.boundingBox, text)
         }
-        // Draw the detection result on the bitmap and show it.
         val textWithResult = resultToDisplay.toString()
         val imgWithResult = drawDetectionResult(bitmap, resultToDisplay)
         runOnUiThread {
@@ -114,7 +104,6 @@ class SignTranslatorActivity : AppCompatActivity() {
         pen.textAlign = Paint.Align.LEFT
 
         detectionResults.forEach {
-            // draw bounding box
             pen.color = Color.RED
             pen.strokeWidth = 8F
             pen.style = Paint.Style.STROKE
@@ -124,7 +113,6 @@ class SignTranslatorActivity : AppCompatActivity() {
 
             val tagSize = Rect(0, 0, 0, 0)
 
-            // calculate the right font size
             pen.style = Paint.Style.FILL_AND_STROKE
             pen.color = Color.YELLOW
             pen.strokeWidth = 2F
@@ -132,10 +120,7 @@ class SignTranslatorActivity : AppCompatActivity() {
             pen.textSize = MAX_FONT_SIZE
             pen.getTextBounds(it.text, 0, it.text.length, tagSize)
             val fontSize: Float = pen.textSize * box.width() / tagSize.width()
-
-            // adjust the font size so texts are inside the bounding box
             if (fontSize < pen.textSize) pen.textSize = fontSize
-
             var margin = (box.width() - tagSize.width()) / 2.0F
             if (margin < 0F) margin = 0F
             canvas.drawText(
@@ -147,23 +132,17 @@ class SignTranslatorActivity : AppCompatActivity() {
     }
 
     private fun getCapturedImage(): Bitmap {
-        // Get the dimensions of the View
         val targetW: Int = activitySignTranslatorBinding.camera.width
         val targetH: Int = activitySignTranslatorBinding.camera.height
 
         val bmOptions = BitmapFactory.Options().apply {
-            // Get the dimensions of the bitmap
             inJustDecodeBounds = true
 
             BitmapFactory.decodeFile(currentPhotoPath, this)
-
             val photoW: Int = outWidth
             val photoH: Int = outHeight
-
-            // Determine how much to scale down the image
             val scaleFactor: Int = max(1, min(photoW / targetW, photoH / targetH))
 
-            // Decode the image file into a Bitmap sized to fill the View
             inJustDecodeBounds = false
             inSampleSize = scaleFactor
             inMutable = true
@@ -217,9 +196,7 @@ class SignTranslatorActivity : AppCompatActivity() {
 
     private fun dispatchTakePictureIntent() {
         Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
-            // Ensure that there's a camera activity to handle the intent
             takePictureIntent.resolveActivity(packageManager)?.also {
-                // Create the File where the photo should go
                 val photoFile: File? =
                     try {
                         createImageFile()
@@ -241,7 +218,6 @@ class SignTranslatorActivity : AppCompatActivity() {
     }
 
     private fun createImageFile(): File {
-        // Create an image file name
         val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss").format(Date())
         val storageDir: File? = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
         return File.createTempFile(
@@ -249,7 +225,6 @@ class SignTranslatorActivity : AppCompatActivity() {
             ".jpg",
             storageDir
         ).apply {
-            // Save a file: path for use with ACTION_VIEW intents
             currentPhotoPath = absolutePath
         }
     }
