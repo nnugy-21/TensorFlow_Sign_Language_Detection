@@ -148,6 +148,12 @@ Here is the some images of how our application looks like.<br>
 And here is the mAP (Mean Average Precision) on each characters:<br>
 <img src="https://storage.googleapis.com/sign_language_dataset2/Documentation/Doc6.png">
 
+### Step 4. Adding Dictionary
+Since this application is supposed to be used to educate or learn about sign language, we add a Dictionary in this application containing all the American Sign Language (ASL) letters. Here is some picture of it:<br>
+![Image2](https://user-images.githubusercontent.com/79896959/121348941-2b3fc480-c953-11eb-87c3-45aba01bd94a.png) &nbsp;
+![Image1](https://user-images.githubusercontent.com/79896959/121348797-ff244380-c952-11eb-8546-4a8722c2a1ef.png)
+
+
 ---
 
 ## Things to Improve
