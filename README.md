@@ -2,7 +2,7 @@
 
 ---
 
-Author: (will be updated later)
+Author:
 * Fathullah Auzan Setyo Laksono (A0040337)
 * Rizqullah Fadhil Rafi (A0040334)
 * Shabrina Zhafarina Putri (C0040335)
